@@ -7,6 +7,7 @@ namespace PrintSample
 {
     public partial class App : Application
     {
+        public static bool CanPrintUwp = true;
         public App()
         {
             InitializeComponent();

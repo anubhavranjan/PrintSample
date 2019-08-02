@@ -13,5 +13,11 @@ namespace PrintSample
         {
             InitializeComponent();
         }
+
+        private void Button_Clicked(object sender, EventArgs e)
+        {
+            var document = new DocumentHelper();
+            DependencyService.Get<IPrintReceipt>().Print(document.Content);
+        }
     }
 }
